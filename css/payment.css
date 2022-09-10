@@ -1,0 +1,628 @@
+@font-face {
+    font-family: logofont;
+    src: url(.font/Codystar-Regular.ttf);
+}
+
+@font-face {
+    font-family: PrimaryFontRoboto;
+    src: url(.font/Roboto-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+html {
+    margin: 0px;
+    width: 1366px;
+    height: 600px;
+}
+
+body {
+    margin: 0px;
+    width: 1366px;
+    height: 600px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: #000428;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #06062e;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #ff0037;
+}
+
+
+/* ============================================================ */
+
+.container {
+    position: relative;
+    width: 700px;
+    height: 570px;
+    /* margin-top: 2%;
+    margin-left: 24%;
+    align-self: center; */
+    backdrop-filter: blur(80px);
+    background: linear-gradient(to right bottom, #1d256d, #072947);
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    z-index: 3;
+}
+
+.title {
+    width: 100%;
+    height: 60px;
+}
+
+.title h1 {
+    font-family: PrimaryFontRoboto;
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 800;
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    word-spacing: 5px;
+}
+
+.part1 {
+    position: relative;
+    width: 310px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.inputbox1 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+.inputbox1 span {
+    font-family: PrimaryFontRoboto;
+    color: aliceblue;
+    width: auto;
+    font-size: 0.9rem;
+}
+
+.inputbox1 input {
+    width: 280px;
+    display: flex;
+    height: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    color: aliceblue;
+}
+
+.inputbox1 input:hover {
+    border: solid 2px rgba(0, 0, 0, 0.4);
+}
+
+.inputbox2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 10px;
+    top: 50px;
+}
+
+.inputbox2 span {
+    font-family: PrimaryFontRoboto;
+    color: aliceblue;
+    width: auto;
+    font-size: 0.9rem;
+}
+
+.inputbox2 input {
+    width: 280px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    color: aliceblue;
+    display: flex;
+}
+
+.inputbox2 input:hover {
+    border: solid 2px rgba(0, 0, 0, 0.4);
+}
+
+.inputbox3 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 10px;
+    top: 100px;
+}
+
+.inputbox3 span {
+    font-family: PrimaryFontRoboto;
+    color: aliceblue;
+    width: auto;
+    font-size: 0.9rem;
+}
+
+.inputbox3 input {
+    width: 280px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    color: aliceblue;
+    display: flex;
+}
+
+.inputbox3 input:hover {
+    border: solid 2px rgba(0, 0, 0, 0.4);
+}
+
+.inputbox4 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 10px;
+    /* left:340px; */
+    top: 150px;
+}
+
+.inputbox4 span {
+    font-family: PrimaryFontRoboto;
+    color: aliceblue;
+    width: auto;
+    font-size: 0.9rem;
+}
+
+.inputbox4 textarea {
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: clip;
+    text-align: start;
+}
+
+.inputbox4 input:hover {
+    border: solid 2px rgba(0, 0, 0, 0.4);
+}
+
+.part1 img {
+    position: absolute;
+    width: 270px;
+    height: 250px;
+    left: 1px;
+    top: 250px;
+}
+
+.part2 {
+    position: absolute;
+    width: 330px;
+    height: 500px;
+    left: 320px;
+    top: 60px;
+    margin-left: 40px;
+}
+
+.part2 h2 {
+    position: relative;
+    font-family: PrimaryFontRoboto;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+    margin-bottom: 2px;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details marker {
+    display: none;
+}
+
+.cardpay {
+    position: relative;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(50px);
+}
+
+.cardpay summary {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: 300px;
+    height: 20px;
+    font-size: 0.9rem;
+    padding-top: 7px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.card {
+    width: 300px;
+    height: 130px;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card img {
+    position: absolute;
+    width: 125px;
+    height: 17px;
+    left: 150px;
+}
+
+.cname {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.cname span {
+    font-family: "PrimaryFontRoboto";
+    color: white;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.cname input {
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 5px;
+}
+
+.cname input:hover {
+    border: solid 2px white;
+}
+
+.cno {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.cno span {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: auto;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.cno input {
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 5px;
+}
+
+.cno input:hover {
+    border: solid 2px white;
+}
+
+.cvvno {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.cvvno span {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.cvvno input {
+    width: 110px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 5px;
+}
+
+.cvvno input:hover {
+    border: solid 2px white;
+}
+
+.exdate {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 145px;
+    top: 119px;
+}
+
+.exdate span {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.exdate input {
+    width: 113px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.exdate input:hover {
+    border: solid 2px white;
+}
+
+.netpay {
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(50px);
+}
+
+.netpay summary {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: 300px;
+    height: 20px;
+    font-size: 0.9rem;
+    padding-top: 7px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.netbanking {
+    width: 300px;
+    height: 100px;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.netbanking img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 248px;
+    top: 23px;
+}
+
+.accno {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.accno span {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.accno input {
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 5px;
+}
+
+.accno input:hover {
+    border: solid 2px white;
+}
+
+.passwd {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.passwd span {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.passwd input {
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 5px;
+}
+
+.passwd input:hover {
+    border: solid 2px white;
+}
+
+.upipay {
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(50px);
+}
+
+.upipay summary {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    width: 300px;
+    height: 20px;
+    font-size: 0.9rem;
+    padding-top: 7px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upi {
+    width: 300px;
+    height: 50px;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.upi img {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    left: 220px;
+    top: 32px;
+}
+
+.upiid {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.upiid span {
+    font-family: PrimaryFontRoboto;
+    color: white;
+    font-weight: 100;
+    width: auto;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.upiid input {
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 5px;
+}
+
+.upiid input:hover {
+    /* border: solid 2px rgba(0, 0, 0, 0.4); */
+    border: solid 2px white;
+}
+
+.button {
+    position: absolute;
+    top: 510px;
+    left: 580px;
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    border: 2px solid rgb(200, 1, 1);
+    background-color: rgb(200, 1, 1);
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.button:hover {
+    border: 2px solid red;
+    background-color: red;
+}
+
+.button:active {
+    transform: scale(0.98);
+    z-index: 2;
+}

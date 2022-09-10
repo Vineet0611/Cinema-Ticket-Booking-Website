@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-CINEMICA</title>
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- =================================== -->
+    <section class="payment">
+        <form action="/payment.html" method="get" id="form1">
+            <div class="container">
+                <div class="title">
+                    <h1>PAYMENT DETAILS</h1>
+                </div>
+                <div class="part1">
+                    <div class="inputbox1">
+                        <span for="fname">Full Name:*</span>
+                        <input type="text" maxlength="40" required>
+                    </div>
+                    <div class="inputbox2">
+                        <span>Email Address:*</span>
+                        <input type="email" required>
+                    </div>
+                    <div class="inputbox3">
+                        <span>Phone No:*</span>
+                        <input type="text" minlength="10" maxlength="10" required>
+                    </div>
+                    <div class="inputbox4">
+                        <span>Address:</span>
+                        <textarea rows="4" cols="50" name="address" form="form1" maxlength="100"></textarea>
+                    </div>
+                    <img src="./images/payment-png.png" alt="">
+                </div>
+                <div class="part2">
+                    <h2>Choose one method:</h2>
+                    <details class="cardpay">
+                        <summary>Debit/Credit Card</summary>
+                        <div class="card">
+                            <img src="./images/Payment-Background-PNG.png" alt="">
+                            <div class="cname">
+                                <span>Card-holder Name:</span>
+                                <input type="text" name="cname" form="form1" maxlength="30">
+                            </div>
+                            <div class="cno">
+                                <span>Card No.:</span>
+                                <input type="number" name="cno" form="form1" minlength="16" maxlength="16">
+                            </div>
+                            <div class="cvvno">
+                                <span>CVV No.:</span>
+                                <input type="number" name="cvvno" form="form1" minlength="3" maxlength="3" size="3">
+                            </div>
+                            <div class="exdate">
+                                <span>Expiry Date:</span>
+                                <input type="date" name="date" form="form1" min="2022-08-05">
+                            </div>
+                        </div>
+                    </details>
+                    <details class="netpay">
+                        <summary>Net Banking</summary>
+                        <div class="netbanking">
+                            <img src="./images/bank-png.png" alt="">
+                            <div class="accno">
+                                <span>Account No.:</span>
+                                <input type="number" name="number" form="form1" maxlength="16" minlength="16">
+                            </div>
+                            <div class="passwd">
+                                <span>Password:</span>
+                                <input type="password" name="password" form="form1">
+                            </div>
+                        </div>
+                    </details>
+                    <details class="upipay">
+                        <summary>PhonePe/GooglePay/Bhim UPI</summary>
+                        <div class="upi">
+                            <img src="./images/UPI-Black.png" alt="">
+                            <div class="upiid">
+                                <span>UPI Id:</span>
+                                <input type="text" name="upiid" form="form1">
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <input type="submit" class="button" form="form1" value="Submit">
+            </div>
+        </form>
+    </section>
+
+
+
+    <script type="text/javascript" src="./js/payment.js"></script>
+    <script src="https://kit.fontawesome.com/2db247bd01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
